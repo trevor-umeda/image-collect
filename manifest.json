@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Image Collect",
+  "description": "Collect an image and post later?",
+  "version": "1.0",
+  
+  "app":{
+        "launch":{
+            "local_path":"index.html"
+        }
+    },
+  "browser_action": {
+      "default_title": "Image Collect",
+      "default_icon": "icon.png",
+      "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["imageCollect.js"],
+    "persistent": false
+  },
+  "permissions":["tabs", "cookies", "storage", "webNavigation", "http://*/*", "https://*/*","contextMenus","clipboardWrite"]
+  
+}

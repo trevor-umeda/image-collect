@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Keeper</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+     
+     <link href="css/bootstrap.min.css" rel="stylesheet">    
+    <script src="js/jquery-2.0.3.js" type="text/javascript"></script> 
+    <script src="js/popup.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+  </head>
+  <body>
+
+
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">Images
+              <input type="text" class="form-control" name="tags" value="" id="tags"><button id="search">Search Tags</button></div>
+      <div class="panel-body">        
+        
+          <div class="row" id="images">
+  
+</div>
+        
+      </div>
+    </div>     
+  </body>
+</html>
+
